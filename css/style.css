@@ -558,6 +558,53 @@ footer {
   margin-left: 45px;
   margin-right: 45px;}
 
+ .newitem2{
+    width: 130px;
+    height: 300px; 
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;} 
+    .new_text {
+      padding: 0;
+      margin: 0;}
+    
+
+  .carousel-inner {width: 320px;
+    justify-content: center;
+    align-items: center;}
+
+  .new_item_list {
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    position: relative;}
+
+  .homeend {
+    justify-content: center;
+    width: 320px;
+    position: relative;}
+
+    #event_banner {
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      position: relative;}
+
+      .event {border-radius: 0;}
+
+ #best_banner {
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: relative;}
+
+#gift_banner {  
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: relative;}
+
 /* 비디오 텍스트 */
 .vd_text, .vd_text2 {
   font-family: 'Noto Serif KR';
@@ -593,17 +640,6 @@ footer {
   #best, 
   .gift {text-align: center;}
 
-  /* 이벤트 */
-  .event {
-    border-top-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;}  
-  
-  /* best 사진 수정 */
-  .best_main, .best_sub, .best_sub_list {
-    text-align: center;}
-  .best_main {border-radius: 5rem;}
-  .best_sub {border-radius: 5rem;}
-
   /* 풋터 */
   .footter_text {text-align: left;}
   .youtube, .insta, .blog {
@@ -637,15 +673,23 @@ footer {
     .menu_h{display : none;} 
     .logo2 {display: none;}
     .newitem3{display : none;}
+    .newitem, .newitem2 {width: 230px;
+      height: 300px; } 
     .menu_w {
       width: 650px;
     }
-    
-    
-  /* best 사진 수정 */
-  .best_sub {border-radius: 5rem;}
-  }
 
+  .event {
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;}
+
+  #event_banner {
+    padding: 0;
+    margin: 0;
+  }
+}
   /* Tablet Device */
 @media all and (min-width:1024px) and (max-width:1043px) {
     #menu2{display : none;}
@@ -657,7 +701,10 @@ footer {
         line-height: 50px;
         align-items: center;
       }
-
+      #event_banner {
+        padding: 0;
+        margin: 0;
+      }
   }
 
   /* Desktop Device */
@@ -680,5 +727,8 @@ footer {
   }
   .newitem, .newitem2, .newitem3 {width: 300px;
     height: 400px; } 
-
+    #event_banner {
+      padding: 0;
+      margin: 0;
+    }
 }
