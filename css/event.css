@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=DM+Serif+Display:ital@1&family=Gowun+Dodum&family=Merriweather:ital,wght@1,700&family=Noto+Serif+KR:wght@500&family=Single+Day&family=Song+Myung&display=swap');
+
+/*font-family: 'Caveat', cursive;
+font-family: 'DM Serif Display', serif;
+font-family: 'Gowun Dodum', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Noto Serif KR', serif;
+font-family: 'Single Day', cursive;
+font-family: 'Song Myung', serif;;*/
+
+@font-face {
+    font-family: 'NanumSquareNeoTTF-EB';
+    src: url('./NanumSquareNeoTTF-dEb.woff')
+    format('woff');
+    font-weight: nomal;
+    font-size: nomal;
+  }
+
+  @font-face {
+    font-family: 'NanumSquareNeoTTF-B';
+    src: url('./NanumSquareNeoTTF-bRg.woff')
+    format('woff');
+    font-weight: nomal;
+    font-size: nomal;
+  }
+
+  @font-face {
+    font-family: 'Binggrae-B';
+    src: url('./BinggraeII-Bold.otf')
+    format('woff');
+    font-weight: nomal;
+    font-size: nomal;
+  }
+
+/* 헤더 */
+#nav {position: relative;}
+
+/* 폰트 */
+.product_title, h1, h2, h3, h4{
+    font-family: 'NanumSquareNeoTTF-EB';
+}
+
+/* 폰트 */
+p{
+  font-family: 'NanumSquareNeoTTF-B';
+}
+
+/* 네비게이션 */
+nav {background-color:#c389c4;
+    height: 40px;
+    opacity: 70%;
+    position: fixed;
+  }
+    .nav-icon {filter: contrast(200%);}
+
+/* 검색창 */
+.search-box{
+    position:relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #BE8EBF;
+    border-radius: 30px;
+    transition: 0.4s;
+    width:30px;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 600px;
+    }
+.search-box:hover{
+  box-shadow: 0px 0px .5px 1px #BE8EBF;
+  width: 600px;
+  }
+.search-btn{
+    text-decoration: none;
+    float: right;
+    top: 100%;
+    left: 65%;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c6a4c7;
+}
+ .search-box:hover > .search-btn{
+    background-color: #fff;
+}
+.search-txt{
+    display: flex;
+    padding: 0;
+    width: 0px;
+    border:none;
+    background: none;
+    outline: none;
+    float: left;
+    font-size: 1rem;
+    line-height: 30px;
+    transition: .4s;
+}
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0px;
+}
+
+/* 로고  */
+.logo2 {
+    margin-top: 90px;
+    margin-bottom: 80px;
+    }
+  
+  /*메뉴 CSS*/
+  li{list-style:none;
+      text-align: center;}
+      a{text-decoration:none;}
+  
+  #menu {
+    position: relative;
+    margin-top: 100px;
+    width: 70%;
+    z-index:1;}
+
+  .menubar {
+    margin-top: 100px;
+      margin-bottom:80px;}
+  
+      .menu_w {
+          overflow: hidden;
+          padding: 0px;
+          width: 89%;
+          position: absolute;
+        }
+        
+      .menu_w > li {
+        width: 20%;
+        float: left;
+        line-height: 40px;
+        background-color: #BE8EBF;
+        border: 0.01rem solid #eeebeb27;
+        
+        }
+        
+      .menu_w a {
+      color: #fff;
+        }
+        
+      .submenu_w > li {
+          /* line-height: 50px; */
+        height: 40px;
+        background-color: #c6a4c7;  
+        border: 0.01rem solid #eeebeb27;
+        }
+      
+        .submenu_w {
+          height: 0;
+          overflow: hidden;
+          padding: 0;
+        }
+      
+        .menu_w > li:hover {
+          background-color: #BE8EBF;
+          transition-duration: 0.5s;
+          opacity: 90%;
+          position: relative;
+        }
+        
+        .menu_w > li:hover .submenu_w {
+          height: 120px; /*서브메뉴 li한개의 높이 50*5*/
+          transition-duration: 1s;
+          position: relative;}
+
+.event_list {
+  position: relative;}
+
+.event_maker {position: absolute;}
+
+.event_maker > h1 {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.event_h {border: 200px #BE8EBF;}
+
+.border {
+    width: 1500px;
+    height: 100px;
+    background-color: rgba(245, 234, 187, 0.6);
+    border:none;}
+
+.flowers {
+height: 200px;
+width: 100px;
+margin-top: 50px;
+opacity: 90%;
+}          
+
+.event_photo{
+    border:2px solid rgba(43, 9, 53, 0.466);
+    margin: 50px;
+}
