@@ -188,6 +188,11 @@ margin-top: 100px;
         transition-duration: 1s;
         position: relative;}
 
+        .menu_w > li:hover:nth-child(5) .submenu_w {
+          height: 90px; /*서브메뉴 li한개의 높이 50*5*/
+          transition-duration: 1s;
+          position: relative;}
+
 
         
 /* 배경 */

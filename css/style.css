@@ -168,6 +168,7 @@ li{list-style:none;
     background-color: #c6a4c7;  
     border: 0.01rem solid #eeebeb27;
     }
+     
   
     .submenu_w {
       height: 0;
@@ -187,7 +188,11 @@ li{list-style:none;
       transition-duration: 1s;
       position: relative;}
 
-
+      .menu_w > li:hover:nth-child(5) .submenu_w {
+        height: 90px; /*서브메뉴 li한개의 높이 50*5*/
+        transition-duration: 1s;
+        position: relative;}
+  
 
 /* 메뉴 세로 영역 */
 
@@ -236,7 +241,7 @@ border-bottom-right-radius: 0.5rem;
 }
     
 .menu_h > li:hover .submenu_h {
-height:inherit; /*서브메뉴 li한개의 높이 50*5*/
+height:50px; /*서브메뉴 li한개의 높이 50*5*/
 transition-duration: 3s;}
 
 
@@ -602,10 +607,7 @@ footer {
   footer {
     background-color: #BE8EBF;
     opacity: 80%;
-    padding-top: 20px;
   }
-  
-  
   
   .title_font {
     position: absolute;
