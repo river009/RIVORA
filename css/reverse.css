@@ -43,7 +43,7 @@ font-family: 'Song Myung', serif;;*/
 }
 
 /* 폰트 */
-p{
+p, a{
   font-family: 'NanumSquareNeoTTF-B';
 }
 
@@ -180,6 +180,59 @@ nav {background-color:#c389c4;
             transition-duration: 1s;
             position: relative;}
 
+/* 메뉴 세로 영역 */
+
+.menu_h {
+  width: 150px;
+  opacity: 70%;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  background-color:   #BE8EBF;
+  margin-bottom: 100px;
+}
+    
+.menu_h> li {
+  width: 150px;
+  text-align: center;
+  line-height: 50px;
+  border:0.5px solid #fff;
+  border-style: none none solid none;
+ 
+    }
+  .menu_h li, a{
+  color: #fff;
+}
+  
+
+.submenu_h > li {
+line-height: 40px;
+background-color: #c6a4c7;
+border-bottom-left-radius: 0.5rem;
+border-bottom-right-radius: 0.5rem;
+}
+
+.submenu_h {
+height: 0; /*ul의 높이를 안보이게 처리*/
+overflow: hidden;
+padding: 0;
+}
+
+.menu_h > li:hover {
+background-color: #d1b1d1;
+transition-duration: 1s;
+border-bottom-left-radius: 0.5rem;
+border-bottom-right-radius: 0.5rem;
+}
+    
+.menu_h > li:hover .submenu_h {
+height:130px; /*서브메뉴 li한개의 높이 50*5*/
+transition-duration: 1.5s;}
+
+.menu_h >  li:hover:nth-child(5) .submenu_h  {
+  height:90px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1.5s;}
+
 .event_list {
   position: relative;}
 
@@ -194,7 +247,7 @@ nav {background-color:#c389c4;
     height: 100px;
     border:none;}
 
-.shine {
+.shine_all {
 height: 200px;
 width: 270px;
 margin-top: 50px;
@@ -330,3 +383,152 @@ h3 {
   padding: 0 10px;
   margin-bottom: 3px;
 }
+
+/* 미디어쿼리 */
+
+/* 모바일 s-l */
+@media all and (min-width:319px) and (max-width:767px){
+   /* 메뉴 */
+   .menu_w, .logo, h4{display : none;} 
+
+   .logo2 {margin: 10px;}
+
+   /* 검색창 */
+.search-box{
+  width: 300px;
+  }
+  .search-box:hover{
+    width: 300px;
+  }
+  .search-box:hover > .search-txt{
+    width: 150px;
+  }  
+.event_h {
+  padding-top: 20px;
+  padding-left: 30px;}
+
+  .shine2, .shine3, .shine4, .shine5 {
+    display: none;
+   }
+
+
+  /* 카드 */
+  .cards {
+    background: #fff;
+    box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.17);
+    display: inline-block;
+    padding: 30px 35px;
+    perspective: 1800px;
+    text-align: left;
+    min-width: 200px;
+    width: 100%;
+    margin: 3px;
+  }
+
+
+}
+
+
+    /* Tablet &amp; Desktop Device */
+  @media all and (min-width:768px) and (max-width:1023px){
+
+    #menu2{display : none;}
+    .menu_h{display : none;} 
+    .event_h {
+      padding-top: 20px;
+      padding-left: 30px;}
+    
+      .product_list {
+        margin: 0;
+        padding: 30px 10px 30px 10px;
+      }
+ 
+      .menu_w {
+        width: 80%;
+      }
+
+  .submenu_w > li {
+   line-height: 40px;
+    background-color: #c6a4c7;  
+    border: 0.01rem solid #eeebeb27;
+    }
+
+    .shine3, .shine4, .shine5 {
+      display: none;
+     }
+
+    /* 카드 */
+  .cards {
+    background: #fff;
+    box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.17);
+    display: inline-block;
+    padding: 30px 35px;
+    perspective: 1800px;
+    text-align: left;
+    min-width: 200px;
+    width: 100%;
+    margin: 3px 30px 30px 3px;
+  }
+
+    
+    }
+  
+    /* Tablet Device */
+  @media all and (min-width:1024px) and (max-width:1043px) {
+
+    #menu2{display : none;}
+    .menu_h{display : none;} 
+
+    .event_h {
+      padding-top: 20px;
+      padding-left: 30px;}
+    
+
+      .menu_w {
+        width: 80%;
+      }
+
+   .shine4, .shine5 {
+    display: none;
+   }
+
+      .cards {
+        background: #fff;
+        box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.17);
+        display: inline-block;
+        padding: 30px 35px;
+        perspective: 1800px;
+        text-align: left;
+        min-width: 200px;
+        width: 100%;
+        margin: 3px 30px 30px 3px;
+      }
+  
+ 
+  }
+  
+    /* Desktop Device */
+  @media all and (min-width:1440px) and (max-width:3000px) {
+    #menu2{display : none;}
+    .menu_h{display : none;} 
+
+      .menu_w {
+        width: 80%;
+      }
+
+      .cards {
+        background: #fff;
+        box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.17);
+        display: inline-block;
+        padding: 30px 35px;
+        perspective: 1800px;
+        text-align: left;
+        min-width: 200px;
+        width: 100%;
+        margin: 3px 30px 30px 3px;
+      }
+     .shine5 {
+        display: none;
+       }
+ 
+    }
