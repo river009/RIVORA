@@ -9,7 +9,7 @@ URL주소 : https://river009.github.io/RIVORA
 <h2>:triangular_flag_on_post:프로젝트 소개</h2>
  프로젝트 이름 : RIVORA
  
- 프로젝트 목적 : 생산 lot 추적 플랫폼 구축 
+ 프로젝트 목적 : 화장품 쇼핑몰, 화장품 브랜드 설립
 
 <h3> 1) 테이블 설계도</h3>  
 <details>
