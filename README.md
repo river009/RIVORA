@@ -2,7 +2,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=RIVORA&fontSize=90)
 <hr>
 <h3>:calendar: 프론트엔드 개발 기간 : 2024.01 ~ 2024.02 </h3>
-<h3>:calendar: 2차 개발 기간 : 2024.03.26 ~ 진행중    </h3>
+<h3>:calendar: 2차 개발 기간 : 2024.03.26 중단 ㅠ_ㅠ </h3>
 URL주소 : https://river009.github.io/RIVORA
 <hr>
 
